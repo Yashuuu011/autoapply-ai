@@ -119,7 +119,7 @@ function Index() {
             <div className="absolute -top-4 -right-4 glass rounded-xl p-4 shadow-elevated">
               <div className="text-xs text-muted-foreground mb-1">Match score</div>
               <div className="text-2xl font-bold text-gradient">94%</div>
-              <div className="text-xs text-muted-foreground">Senior Pentester · Remote</div>
+              <div className="text-xs text-muted-foreground">Best fit · across your fields</div>
             </div>
           </div>
         </div>
@@ -140,12 +140,12 @@ function Index() {
       {/* NICHES */}
       <section id="niches" className="mx-auto max-w-7xl px-6 py-24">
         <div className="text-center max-w-2xl mx-auto mb-14">
-          <div className="text-xs font-semibold uppercase tracking-widest text-primary mb-3">Specialized for security & tech</div>
+          <div className="text-xs font-semibold uppercase tracking-widest text-primary mb-3">Every field, every level</div>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
-            Built for the roles you actually want
+            Whatever you do, we find the jobs
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Curated job sources, screening questions, and resume templates tuned for each track.
+            From software engineering and cybersecurity to healthcare, finance, design, and the trades — your resume picks the lane.
           </p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
