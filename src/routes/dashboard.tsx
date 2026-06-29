@@ -2,7 +2,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   LayoutDashboard, Search, FileText, Briefcase, Settings, Bell,
   TrendingUp, Target, Zap, CheckCircle2, Clock, XCircle, Trophy,
-  Bug, ShieldCheck, Code2, Network, Lock, MapPin, DollarSign,
+  Bug, ShieldCheck, Code2, Stethoscope, Palette, LineChart,
+  MapPin, DollarSign,
 } from "lucide-react";
 import { SiteHeader } from "@/components/site-chrome";
 
@@ -24,11 +25,12 @@ const metrics = [
 ];
 
 const jobs = [
-  { title: "Senior Penetration Tester", company: "Stripe", location: "Remote · US", salary: "$160k–$210k", match: 94, tags: ["OSCP", "BurpSuite", "Web Apps"], icon: Bug },
-  { title: "SOC Analyst II", company: "Datadog", location: "New York, NY", salary: "$120k–$150k", match: 88, tags: ["SIEM", "Splunk", "Incident Response"], icon: ShieldCheck },
-  { title: "Application Security Engineer", company: "Cloudflare", location: "Remote · Global", salary: "$170k–$220k", match: 86, tags: ["AppSec", "SAST", "Threat Modeling"], icon: Lock },
-  { title: "Cloud Security Engineer", company: "Snowflake", location: "Hybrid · SF", salary: "$180k–$240k", match: 82, tags: ["AWS", "Kubernetes", "IAM"], icon: Network },
-  { title: "Senior Full-Stack Engineer", company: "Linear", location: "Remote · EU", salary: "$140k–$180k", match: 79, tags: ["React", "TypeScript", "Postgres"], icon: Code2 },
+  { title: "Senior Full-Stack Engineer", company: "Linear", location: "Remote · EU", salary: "$140k–$180k", match: 94, tags: ["React", "TypeScript", "Postgres"], icon: Code2 },
+  { title: "Penetration Tester", company: "Stripe", location: "Remote · US", salary: "$160k–$210k", match: 91, tags: ["OSCP", "BurpSuite", "Web Apps"], icon: Bug },
+  { title: "Product Designer", company: "Figma", location: "Hybrid · NYC", salary: "$150k–$190k", match: 88, tags: ["Design Systems", "Prototyping"], icon: Palette },
+  { title: "ICU Registered Nurse", company: "Mass General", location: "Boston, MA", salary: "$95k–$130k", match: 86, tags: ["BLS", "ACLS", "Critical Care"], icon: Stethoscope },
+  { title: "Senior Data Analyst", company: "Shopify", location: "Remote · Canada", salary: "$120k–$155k", match: 82, tags: ["SQL", "dbt", "Looker"], icon: LineChart },
+  { title: "SOC Analyst II", company: "Datadog", location: "New York, NY", salary: "$120k–$150k", match: 79, tags: ["SIEM", "Splunk", "IR"], icon: ShieldCheck },
 ];
 
 const pipeline = [
