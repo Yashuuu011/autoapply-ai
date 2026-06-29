@@ -201,9 +201,9 @@ function Index() {
             </h2>
             <div className="mt-8 space-y-6">
               {[
-                { n: "01", t: "Upload your resume", d: "We parse skills, certs (OSCP, CEH, CISSP…), and experience." },
-                { n: "02", t: "Set your targets", d: "Roles, stack, salary floor, remote/hybrid, clearance level." },
-                { n: "03", t: "AutoApply runs 24/7", d: "Headless workers apply, tailor cover letters, and log everything." },
+                { n: "01", t: "Upload your resume", d: "We parse skills, certifications, and experience — across any industry." },
+                { n: "02", t: "Set your targets", d: "Roles, salary floor, locations, remote/hybrid/on-site, must-haves and deal-breakers." },
+                { n: "03", t: "AutoApply runs 24/7", d: "AI workers apply, tailor cover letters per job, and log every step for you." },
               ].map((s) => (
                 <div key={s.n} className="flex gap-4">
                   <div className="font-mono text-sm font-bold text-primary shrink-0 w-10">{s.n}</div>
@@ -225,12 +225,13 @@ function Index() {
               <div className="ml-3 text-xs font-mono text-muted-foreground">autoapply --watch</div>
             </div>
             <pre className="p-5 text-xs font-mono leading-relaxed overflow-x-auto">
-{`> scanning sources... `}<span className="text-accent">✓ 8 boards</span>{`
-> new match found     `}<span className="text-primary">[94%]</span>{` Senior Pentester @ Stripe
-> tailoring resume    `}<span className="text-accent">✓</span>{` injected OSCP, BurpSuite
+{`> scanning sources... `}<span className="text-accent">✓ 212 boards</span>{`
+> new match found     `}<span className="text-primary">[94%]</span>{` Senior Product Designer @ Linear
+> tailoring resume    `}<span className="text-accent">✓</span>{` highlighted Figma, design systems
 > generating letter   `}<span className="text-accent">✓</span>{` tone: confident, 220w
-> filling application `}<span className="text-accent">✓</span>{` 12/12 fields
+> filling application `}<span className="text-accent">✓</span>{` 14/14 fields
 > submission          `}<span className="text-accent">✓ accepted</span>{`
+> next in queue       `}<span className="text-primary">[91%]</span>{` RN — ICU Nights @ Mass General
 > next in queue       `}<span className="text-primary">[88%]</span>{` SOC Analyst II @ Datadog
 `}
             </pre>
