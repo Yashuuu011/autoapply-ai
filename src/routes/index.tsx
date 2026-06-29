@@ -2,7 +2,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   Shield, Zap, Target, FileCheck, Bell, BarChart3, Bot, Lock,
   CheckCircle2, ArrowRight, Terminal, Bug, Network, Code2, ShieldCheck,
-  Search, Sparkles, Briefcase,
+  Search, Sparkles, Briefcase, Stethoscope, Palette, LineChart, GraduationCap,
+  Megaphone, Scale, Wrench, Building2, Globe2,
 } from "lucide-react";
 import heroImg from "@/assets/hero-cyber.jpg";
 import { SiteHeader, SiteFooter } from "@/components/site-chrome";
