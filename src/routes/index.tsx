@@ -65,14 +65,14 @@ function Index() {
           <div>
             <div className="inline-flex items-center gap-2 rounded-full glass px-3 py-1 text-xs font-medium text-primary mb-6">
               <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
-              Built for cybersecurity & tech professionals
+              For every career, every industry, every field
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05]">
-              Land your next <span className="text-gradient">security role</span> on autopilot.
+              Upload your resume. <span className="text-gradient">Land any job</span>, anywhere.
             </h1>
             <p className="mt-6 text-lg text-muted-foreground max-w-xl">
-              AutoApply AI finds, ranks, and applies to pentest, SOC, ethical hacking, AppSec, and developer
-              jobs for you — while you focus on the work that matters.
+              AutoApply AI reads your resume and finds, ranks, and applies to roles across tech, security,
+              healthcare, finance, design, marketing — every field, every region — while you focus on what matters.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
