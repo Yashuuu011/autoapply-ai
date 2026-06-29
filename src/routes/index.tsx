@@ -2,7 +2,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   Shield, Zap, Target, FileCheck, Bell, BarChart3, Bot, Lock,
   CheckCircle2, ArrowRight, Terminal, Bug, Network, Code2, ShieldCheck,
-  Search, Sparkles, Briefcase,
+  Search, Sparkles, Briefcase, Stethoscope, Palette, LineChart, GraduationCap,
+  Megaphone, Scale, Wrench, Building2, Globe2,
 } from "lucide-react";
 import heroImg from "@/assets/hero-cyber.jpg";
 import { SiteHeader, SiteFooter } from "@/components/site-chrome";
@@ -10,32 +11,38 @@ import { SiteHeader, SiteFooter } from "@/components/site-chrome";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "AutoApply AI — Land Cybersecurity & Tech Jobs on Autopilot" },
-      { name: "description", content: "AI-powered job hunt for ethical hackers, pentesters, SOC analysts, web developers, and IT pros. Auto-match, auto-apply, track everything." },
+      { title: "AutoApply AI — Land Any Job, in Any Field, on Autopilot" },
+      { name: "description", content: "Upload your resume and let AI find, match, and auto-apply to jobs across tech, security, healthcare, finance, design, marketing, and every field in between." },
       { property: "og:title", content: "AutoApply AI" },
-      { property: "og:description", content: "Job automation for security & tech professionals." },
+      { property: "og:description", content: "AI job automation for every career path." },
     ],
   }),
   component: Index,
 });
 
 const niches = [
-  { icon: Bug, label: "Penetration Tester", count: "1,240+ open roles" },
-  { icon: ShieldCheck, label: "SOC Analyst", count: "2,180+ open roles" },
-  { icon: Terminal, label: "Ethical Hacker", count: "860+ open roles" },
-  { icon: Network, label: "Cloud Security", count: "1,540+ open roles" },
-  { icon: Code2, label: "Web Developer", count: "8,400+ open roles" },
-  { icon: Lock, label: "AppSec Engineer", count: "720+ open roles" },
+  { icon: Code2, label: "Software & Web Dev", count: "42,800+ open roles" },
+  { icon: ShieldCheck, label: "Cybersecurity & Pentest", count: "6,540+ open roles" },
+  { icon: LineChart, label: "Data & Analytics", count: "18,200+ open roles" },
+  { icon: Stethoscope, label: "Healthcare & Nursing", count: "31,400+ open roles" },
+  { icon: Building2, label: "Finance & Banking", count: "12,900+ open roles" },
+  { icon: Megaphone, label: "Marketing & Sales", count: "24,700+ open roles" },
+  { icon: Palette, label: "Design & Creative", count: "9,150+ open roles" },
+  { icon: GraduationCap, label: "Education & Research", count: "7,800+ open roles" },
+  { icon: Scale, label: "Legal & Compliance", count: "4,320+ open roles" },
+  { icon: Wrench, label: "Engineering & Trades", count: "16,600+ open roles" },
+  { icon: Globe2, label: "Remote · Worldwide", count: "55,000+ open roles" },
+  { icon: Briefcase, label: "+ 80 more categories", count: "explore all" },
 ];
 
 const features = [
-  { icon: Search, title: "Aggregated Job Feed", desc: "Pulls from LinkedIn, Indeed, Greenhouse, Lever, and security-focused boards in real time." },
-  { icon: Sparkles, title: "AI Resume Optimizer", desc: "ATS scoring, missing-keyword detection, and tailored bullet rewrites per job." },
-  { icon: Target, title: "Smart Match Engine", desc: "Embedding-based ranking by skills, stack, clearance, and salary fit." },
-  { icon: Bot, title: "One-Click Auto Apply", desc: "Headless browser workers fill forms, upload resumes, and answer screeners." },
+  { icon: Search, title: "Universal Job Feed", desc: "Indexes LinkedIn, Indeed, Glassdoor, Greenhouse, Lever, and 200+ niche boards across every industry." },
+  { icon: Sparkles, title: "AI Resume Optimizer", desc: "ATS scoring, missing-keyword detection, and tailored bullet rewrites for any role you target." },
+  { icon: Target, title: "Smart Match Engine", desc: "Embedding-based ranking by skills, experience, salary, location, and personal preferences." },
+  { icon: Bot, title: "One-Click Auto Apply", desc: "Headless workers fill forms, upload your resume, and answer common screening questions." },
   { icon: FileCheck, title: "AI Cover Letters", desc: "Personalized per role with tone and length controls. Regenerate in a click." },
-  { icon: BarChart3, title: "Pipeline Analytics", desc: "Kanban tracker, response rates, interview funnels, best-performing resume." },
-  { icon: Bell, title: "Instant Alerts", desc: "Push, email, and Telegram notifications the moment a high-match role drops." },
+  { icon: BarChart3, title: "Pipeline Analytics", desc: "Kanban tracker, response rates, interview funnels, and best-performing resume insights." },
+  { icon: Bell, title: "Instant Alerts", desc: "Push, email, and Telegram notifications the moment a high-match role drops in your field." },
   { icon: Lock, title: "Encrypted Vault", desc: "Credentials and resumes encrypted at rest. GDPR-compliant infrastructure." },
 ];
 
@@ -43,7 +50,7 @@ const stats = [
   { value: "92%", label: "avg. ATS score" },
   { value: "14×", label: "faster applications" },
   { value: "3.4×", label: "interview rate" },
-  { value: "40k+", label: "security jobs indexed" },
+  { value: "300k+", label: "jobs indexed daily" },
 ];
 
 function Index() {
@@ -58,14 +65,14 @@ function Index() {
           <div>
             <div className="inline-flex items-center gap-2 rounded-full glass px-3 py-1 text-xs font-medium text-primary mb-6">
               <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
-              Built for cybersecurity & tech professionals
+              For every career, every industry, every field
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05]">
-              Land your next <span className="text-gradient">security role</span> on autopilot.
+              Upload your resume. <span className="text-gradient">Land any job</span>, anywhere.
             </h1>
             <p className="mt-6 text-lg text-muted-foreground max-w-xl">
-              AutoApply AI finds, ranks, and applies to pentest, SOC, ethical hacking, AppSec, and developer
-              jobs for you — while you focus on the work that matters.
+              AutoApply AI reads your resume and finds, ranks, and applies to roles across tech, security,
+              healthcare, finance, design, marketing — every field, every region — while you focus on what matters.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
@@ -112,7 +119,7 @@ function Index() {
             <div className="absolute -top-4 -right-4 glass rounded-xl p-4 shadow-elevated">
               <div className="text-xs text-muted-foreground mb-1">Match score</div>
               <div className="text-2xl font-bold text-gradient">94%</div>
-              <div className="text-xs text-muted-foreground">Senior Pentester · Remote</div>
+              <div className="text-xs text-muted-foreground">Best fit · across your fields</div>
             </div>
           </div>
         </div>
@@ -133,12 +140,12 @@ function Index() {
       {/* NICHES */}
       <section id="niches" className="mx-auto max-w-7xl px-6 py-24">
         <div className="text-center max-w-2xl mx-auto mb-14">
-          <div className="text-xs font-semibold uppercase tracking-widest text-primary mb-3">Specialized for security & tech</div>
+          <div className="text-xs font-semibold uppercase tracking-widest text-primary mb-3">Every field, every level</div>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
-            Built for the roles you actually want
+            Whatever you do, we find the jobs
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Curated job sources, screening questions, and resume templates tuned for each track.
+            From software engineering and cybersecurity to healthcare, finance, design, and the trades — your resume picks the lane.
           </p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -194,9 +201,9 @@ function Index() {
             </h2>
             <div className="mt-8 space-y-6">
               {[
-                { n: "01", t: "Upload your resume", d: "We parse skills, certs (OSCP, CEH, CISSP…), and experience." },
-                { n: "02", t: "Set your targets", d: "Roles, stack, salary floor, remote/hybrid, clearance level." },
-                { n: "03", t: "AutoApply runs 24/7", d: "Headless workers apply, tailor cover letters, and log everything." },
+                { n: "01", t: "Upload your resume", d: "We parse skills, certifications, and experience — across any industry." },
+                { n: "02", t: "Set your targets", d: "Roles, salary floor, locations, remote/hybrid/on-site, must-haves and deal-breakers." },
+                { n: "03", t: "AutoApply runs 24/7", d: "AI workers apply, tailor cover letters per job, and log every step for you." },
               ].map((s) => (
                 <div key={s.n} className="flex gap-4">
                   <div className="font-mono text-sm font-bold text-primary shrink-0 w-10">{s.n}</div>
@@ -218,12 +225,13 @@ function Index() {
               <div className="ml-3 text-xs font-mono text-muted-foreground">autoapply --watch</div>
             </div>
             <pre className="p-5 text-xs font-mono leading-relaxed overflow-x-auto">
-{`> scanning sources... `}<span className="text-accent">✓ 8 boards</span>{`
-> new match found     `}<span className="text-primary">[94%]</span>{` Senior Pentester @ Stripe
-> tailoring resume    `}<span className="text-accent">✓</span>{` injected OSCP, BurpSuite
+{`> scanning sources... `}<span className="text-accent">✓ 212 boards</span>{`
+> new match found     `}<span className="text-primary">[94%]</span>{` Senior Product Designer @ Linear
+> tailoring resume    `}<span className="text-accent">✓</span>{` highlighted Figma, design systems
 > generating letter   `}<span className="text-accent">✓</span>{` tone: confident, 220w
-> filling application `}<span className="text-accent">✓</span>{` 12/12 fields
+> filling application `}<span className="text-accent">✓</span>{` 14/14 fields
 > submission          `}<span className="text-accent">✓ accepted</span>{`
+> next in queue       `}<span className="text-primary">[91%]</span>{` RN — ICU Nights @ Mass General
 > next in queue       `}<span className="text-primary">[88%]</span>{` SOC Analyst II @ Datadog
 `}
             </pre>
